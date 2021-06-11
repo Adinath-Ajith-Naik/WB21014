@@ -4,11 +4,22 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scrollbar-color: transparent transparent;
+    scrollbar-width: 0px;
 }
 
 body {
     font-family: montserrat;
+    background-color: #d6cdc0af;
 }
+
+h1 {
+    font-size: 3rem;
+    color: #626b63;
+}
+
+
+/* Nav Bar */
 
 nav {
     background: #626b63;
@@ -42,4 +53,66 @@ nav ul li a {
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+}
+
+
+/* Banner */
+
+.banner {
+    background-image: url("ppl2.jpeg");
+    background-size: 100% auto;
+    background-position-y: bottom;
+    height: 600px;
+}
+
+.banner_head {
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.767), rgba(255, 255, 255, 0));
+    color: #ffd9a4;
+    padding: 120px;
+    font-style: italic;
+    font-size: 3rem;
+    align-items: center;
+}
+
+
+/* About Us */
+
+#about {
+    padding: 50px;
+    height: 600px;
+}
+
+#about .para {
+    width: 70%;
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 10px 25px 0 0;
+}
+
+
+/* Gallery */
+
+#gallery {
+    padding: 0 5%;
+    line-height: 0;
+    -webkit-column-count: 5;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 5;
+    -moz-column-gap: 5px;
+    column-count: 5;
+    column-gap: 5px;
+}
+
+#gallery img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 5px;
+    /* to match column gap */
+}
+
+#gallery img:hover {
+    filter: grayscale(100%);
 }
